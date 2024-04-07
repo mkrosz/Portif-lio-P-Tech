@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Menu</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="../index.html" class="logo">P<span>ortifóli</span>O</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../HEADER/sobreMim.html">Sobre mim</a></li>
+                <li class="nav-item"><a href="#">Menu</a></li>
+                <li class="nav-item"><a href="../HEADER/contato.html">Contatos</a></li>
+               <li class="search-icon"><a href="../HEADER/pesquisa.php"><i class='bx bx-search'></i></a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="espaço">
+        <h2>Seção 1</h2>
+
+        <div class="options-container">
+            <div class="options" onclick="redirectTo('../OpçõesMenu/cursos.html')">
+                <img src="../IMG/certificacoes.jpg" alt="Certificações">
+                <span class="text">Cursos</span>
+            </div>
+
+            <div class="options" onclick="redirectTo('../OpçõesMenu/menu_pjo.html')">
+                <img src="../IMG/projeto_progresso.jpg" alt="Projetos em Progresso">
+                <span class="text">Projetos</span>
+            </div>
+        </div>
+
+        <h2>Seção 2</h2>
+
+        <div class="options-container">
+            <div class="options" onclick="redirectTo('../em_obras.html')">
+                <img src="../IMG/TCC.jpg" alt="TCC">
+                <span class="text">TCC</span>
+            </div>
+
+            <div class="options" onclick="redirectTo('../OpçõesMenu/p_tech.html')">
+                <img src="../IMG/p-tech.png" alt="P-tech">
+                <span class="text">P-tech</span>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        function redirectTo(url) {
+            window.location.href = url;
+        }
+    </script>
+
+</body>
+
+</html>

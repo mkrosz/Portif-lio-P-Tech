@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/infos.css">
+    <title>P-Tech</title>
+    <style>
+        .container-tab {
+            margin-top: 72px;
+            margin-left: 5px;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .tab.active {
+            display: block;
+        }
+
+        #tab-button {
+            background-color: #1e1c2a;
+            color: #fff;
+            border: 2px solid transparent;
+            /* Adicionando uma borda transparente */
+            border-radius: 10px;
+            padding: 8px 25px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #tab-button.active {
+            background-color: transparent;
+            /* Removendo a cor de fundo */
+            color: purple;
+            /* Cor do texto */
+            border-color: purple;
+            /* Cor da borda ativa */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="../index.html" class="logo">P<span>ortifóli</span>O</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../HEADER/sobreMim.html">Sobre mim</a></li>
+                <li class="nav-item"><a href="../HEADER/menu.html">Menu</a></li>
+                <li class="nav-item"><a href="../HEADER/contato.html">Contatos</a></li>
+                <li class="search-icon"><a href="../HEADER/pesquisa.php"><i class='bx bx-search'></i></a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="container-tab">
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab1')">25/03/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab2')">29/04/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab3')">13/05/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab4')">22/05/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab5')">12/08/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab6')">30/09/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab7')">23/11/22</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab8')">15/03/23</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab9')">04/05/23</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab10')">05/05/23</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab11')">22/09/23</button>
+        <button class="tab-button-js" id="tab-button" onclick="openTab(event, 'tab12')">24/11/23</button>
+    </div>
+    
+    <div class="tab active">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+    
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>P-Tech</h4>
+                            <p>Selecione uma das datas acima para saber o que foi feito no P-Tech do dia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    
+    <div id="tab1" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Primeiro P-Tech</h4>
+                            <h1>Eduzz e Uno</h1>
+                            <p>Em nosso primeiro P-Tech foram apresentados os profissionais que iriam trabalhar no
+                                P-Tech conosoco.<br>
+                                Eles apresentaram quem eram, o que faziam, e explicaram como seriam nosso P-Techs dali
+                                para frente.<br>
+                                Concluimos o P-Tech daquele dia nos apresentando aos profissionais que dariam as
+                                matérias de P-Tech.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-5"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-m"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-r"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab2" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Segundo P-Tech</h4>
+                            <h1>Eduzz e Uno</h1>
+                            <p>Em nossa segunda aula de P-Tech, foi um momento aonde nos forneceram um momento para
+                                pensarmos sobre<br>
+                                o certo e o errado, e como o seu entendimento pode mudar de pessoa para pessoa de acordo
+                                com suas experiencias de vida.<br>
+                                tivemos uma dinâmica muito interessante de dabate com o seguinte tema "Se um parente
+                                próximo seu estivesse doente e seu tratamento fosse muito caro,<br>
+                                e você trabalhasse em um banco e pudesse pegar 1 centavo da conta de cada pessoa
+                                associada ele, você o faria para salvar seu parente?"
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-9"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-b"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-r"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab3" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Terceiro P-Tech</h4>
+                            <h1>Eduzz e Uno</h1>
+                            <p>No terceiro P-Tech fomos agraciados com a oportunidade de visitar a Eduzz aqui em
+                                Sorocaba.<br>
+                                Lá nos mostraram a empresa, como eles trabalhavam, e apresentaram três programadores de
+                                diversos cargos na empresa.<br>
+                                Também tivemos uma dinãmica aonde pudemos perceber, que independente da profissão, todas
+                                são extremamentes necessárias em nossa sociedade<br>
+                                e que não existe uma profissão que é superior que a outra.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-1"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-m"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-i"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab4" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Quarto P-Tech</h4>
+                            <h1>Eduzz e Uno</h1>
+                            <p>Nosso quarto P-Tech foi realizado através do teams, as profissionais<br>
+                                nos ensinaram sobre "Rede de Relacionamento" e "Network", também desenvolveram conosco
+                                uma dinâmica<br>
+                                afim de aplicar os conhecimentos adquiridos naquela aula de P-Tech.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-m"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-i"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab5" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Quinto P-Tech</h4>
+                            <h1>Eduzz e Uno</h1>
+                            <p>Já no quinto aula de P-Tech, foi nos ensinado sobre a importãncia do "Ikigai"<br>
+                                técnica desenvolvida para nos autoconhecermos em nossa vida pessoal e profissional.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-1"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-g"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-o"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab6" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Sexto P-Tech</h4>
+                            <h1>Eduzz e Uno</h1>
+                            <p>Nesse P-Tech conversamos sobre as direções que poderiamos tomar dentro de nossa área de
+                                desenvolvimento de sistemas.<br>
+                                Também foram tirada várias dúvidas nossas a respeito da área. Eles explicaram a
+                                importância de mostrar as empressas quem é você e o que sabe fazer,<br>
+                                seguindo as ideias do P-Tech, junto à eles criamos nosso LinkedIn, e colocamos as
+                                primieras informações relevantes nele.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-0"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-s"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-e"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-t"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab7" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Setimo P-Tech</h4>
+                            <h1>Tegra e Eduzz</h1>
+                            <p>Nesse P-Tech foi apresentado a empresa Tegra, o que ela faz, e como atua dentro do
+                                mercado.<br>
+                                Da mesma forma foram apresentadas a profissional que começaria a fazer parte do P-Tech
+                                dali em diante.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-n"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-o"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-v"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab8" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Oitavo P-Tech</h4>
+                            <h1>Tegra</h1>
+                            <p>Foi nos apresentado em nosso oitavo P-Tech uma profissional que trabalhava como Analista
+                                de Suporte.<br>
+                                Ela nos explicou o que fazia, como trabalhava, qual foi sua trajetória para estár onde
+                                ela estava, contou algumas experiências,<br>
+                                e nos revelou algumas de suas dificuldades e como fez para superá-las.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-1"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-5"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-m"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-r"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab9" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Nono P-Tech</h4>
+                            <h1>Itix</h1>
+                            <p>Em nosso nono P-Tech foi o dono da própria Itix que nos apresentou sua empresa,<br>
+                                como ela começou, qual seu próposito, como trabalha no mercado Nacional, e mostrou como
+                                é o funcionamento dentro da empresa.<br>
+                                Eles fizeram também iniciaram um agrado para nós sorteando garrafas e cadernos com a
+                                logo da empresa.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-0"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-4"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-m"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-i"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab10" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Décimo P-Tech</h4>
+                            <h1>Itix</h1>
+                            <p>Neste P-Tech pudemos entender melhor sobre como funciona o Remarketing que as empresas
+                                usam em seus aplicativos, e foi incentivado a nós a usar menos<br>
+                                as tecnologias, e focar em nosso estudos para nosso futuro como profissionais
+                                qualificados, foi pedido para assisitirmos o filme "O Dilema das Redes" um documentário
+                                que aborda<br>
+                                sobre esse tema de forma mais abrangente, mostrando as problemáticas em volta desses
+                                tópicos, que são as redes sociais.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-0"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-5"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-m"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-a"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-i"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab11" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Décimo Primeiro P-Tech</h4>
+                            <h1>AWS</h1>
+                            <p>Esse P-Tech foi realizado com um projeto que existe dentro da AWS, neste dia foi
+                                realizado uma palestra, aonde tivemos a oportunidade de<br>
+                                conhecer melhor o funcionamento da nuvem, também falamos sobre a inteligência artificial
+                                para identificar fraudes de documentos com foto como o RG<br>
+                                Pudemos tirar nossas dúvidas sobre os assuntos relacionados nesse dia, foi uma palestra
+                                muito gratificante.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-s"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-e"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-t"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <div id="tab12" class="tab">
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/P-Tech.png" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Décimo Segundo P-Tech</h4>
+                            <h1>Itix</h1>
+                            <p>Aprendemos como funciona o processo de criação de uma empresa em nosso Décimo Segundo
+                                P-Tech, desde de seu rascunho no papel até uma realidade estável financeiramente.<br>
+                                Como mecânica criamos como seria uma empresa de reciclagem em nossa visão, de acordo com
+                                os pontos apresentados na palestra, também no final apresentamos nossas empresas
+                                fictícias.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-4"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-n"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-o"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-v"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-2"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-solid fa-3"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+- Quando pesquisa, e tem 2 listas ou mais, quando vc passa para as outras listas ele da F5 na pagina e apaga a pesquisa.
+- O usuários deveria aparecere apenas se estivesse logado como admin, se não estiver logado, ou logado com uma conta que não é de admin, não era para aparecer a opção usuário.
+- Não era para dar pra mecher e alterar tudo das tabelas se você não estivesse logado, apenas visualizar.
+- As senhas não deveriam aparecer na visualização de usuários do admin. (tem que aparecer assim "********")
+- Em Motos quando cria nova moto e não coloca imagem deveria aparecer como pré definida a imagem "sem imagem", assim como ocorre em usuários.
+- CPF/CNPJ não está pegando a formatação da máscara corretamente em clientes.
+- CEP não está pegando a formatação da máscara corretamente em clientes.
+- Telefone não está pegando a formatação da máscara corretamente em clientes.
+- Celular não está pegando a formatação da máscara corretamente em clientes.
+
+* Vale lembrar que quando o usuário faz login (independente se é admin ou não) ele é redirecionado a página inicial do projeto, e não saí da conta ao navegar pelo site.

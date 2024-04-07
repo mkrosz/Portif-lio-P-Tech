@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/infos.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>PJO1</title>
+    <style>
+        .carousel {
+            position: relative;
+            max-width: 600px;
+            margin: 0 auto;
+            overflow: hidden; 
+            margin-right: 0px;
+        }
+
+        .carousel-images {
+            display: flex;
+            width: 100%;
+            /* Definir a largura total do carrossel */
+            height: auto;
+            /* Permitir a altura automática para manter a proporção */
+            transition: transform 0.5s ease;
+        }
+
+        .carousel-images img {
+            width: 500px;
+            height: 500px;
+            object-fit: cover;
+        }
+
+        button {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navigation">
+            <a href="../index.html" class="logo">P<span>ortifóli</span>O</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../HEADER/sobreMim.html">Sobre mim</a></li>
+                <li class="nav-item"><a href="../HEADER/menu.html">Menu</a></li>
+                <li class="nav-item"><a href="../HEADER/contato.html">Contatos</a></li>
+                <li class="search-icon"><a href="../HEADER/pesquisa.php"><i class='bx bx-search'></i></a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <div class="espaço">
+
+        <div id="copiadoMensagem" style="display: none;">Código copiado com sucesso!</div>
+        <!-- Mensagem de confirmação -->
+
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+                        <div class="carousel">
+                            <div class="carousel-images">
+                                <img src="../IMG/Em_breve.jpg" alt="Image 1">
+                                <img src="../IMG/p-tech.png" alt="Image 2">
+                                <img src="../IMG/certificacoes.jpg" alt="Image 3">
+                            </div>
+                            <button class="prev" onclick="moveSlide(-1)">❮</button>
+                            <button class="next" onclick="moveSlide(1)">❯</button>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+
+                            <h4>Quem sou eu</h4>
+                            <h1>Programador de várias linguagens</h1>
+                            <p>Meu nome é Mike, tenho 18 anos, resido atualmente em sorocaba, estou na procura de um emprego na área da tecnologia.</p>
+
+                            <h4>Linguagens que tenho conhecimento</h4>
+                            <div class="linguagens-icons">
+                                <div class="linguagem" title="HTML 5">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <div class="linguagem" title="CSS">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <div class="linguagem" title="JavaScript">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                                <div class="linguagem" title="PHP">
+                                    <i class="fa-brands fa-php"></i>
+                                </div>
+                                <div class="linguagem" title="Python">
+                                    <i class="fa-brands fa-python"></i>
+                                </div>
+                                <div class="linguagem" title="MySql">
+                                    <i class="fa-solid fa-database"></i>
+                                </div>
+                                <div class="linguagem" title="React Native">
+                                    <i class="fa-brands fa-react"></i>
+                                </div>
+                                <div class="linguagem" title="Bootstrap">
+                                    <i class="fa-brands fa-bootstrap"></i>
+                                </div>
+                            </div>
+
+                            <h4>O que estou fazendo atualmente</h4>
+                            <h1>Estudante de Etec</h1>
+                            <p>Estou finalizando meu último ano de Desenvolvimento de sistema na "ETEC Fernando Prestes", antes de entrar para a "FATEC" para um curso de especialização como tecnólogo.</p>
+
+                            <div class="options-btn">
+                                <div class="ver-sobre">
+                                    <i class="fa-solid fa-address-card"></i>
+                                    <a class="button" href="../HEADER/contato.html"
+                                        onclick="scrollToElement('ver-mais')">Contato</a>
+                                </div>
+
+                                <div class="ver-projeto">
+                                    <i class="fa-solid fa-bookmark"></i>
+                                    <a class="button" href="../OpçõesMenu/option3.html">Meus Projetos</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+        </main>
+    </div>
+    <script src="../JAVASCRIPT/script.js"></script>
+</body>
+
+</html>
