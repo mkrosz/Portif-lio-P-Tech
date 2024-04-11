@@ -1,11 +1,113 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jogo da forca</title>
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="../CSS/infos.css">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <title>Jogo da Forca</title>
+    <style>
+    </style>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="navigation">
+            <a href="../index.html" class="logo">P<span>ortifóli</span>O</a>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="../HEADER/sobreMim.html">Sobre mim</a></li>
+                <li class="nav-item"><a href="../HEADER/menu.html">Menu</a></li>
+                <li class="nav-item"><a href="../HEADER/contato.html">Contatos</a></li>
+                <li class="search-icon"><a href="../HEADER/pesquisa.php"><i class='bx bx-search'></i></a></li>
+            </ul>
+            <div class="menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <div class="espaço">
+
+        <div id="copiadoMensagem" style="display: none;">Código copiado com sucesso!</div>
+        <!-- Mensagem de confirmação -->
+
+        <main>
+            <section>
+                <div class="container">
+                    <div class="left-side">
+
+                        <div class="itens">
+                            <div class="select-image">
+                                <img src="../IMG/Em_breve.jpg" alt="">
+                            </div>
+
+                            <div class="tb">
+                                <div class="tbs">
+                                    <img src="../IMG/p-tech.png" alt="">
+                                </div>
+
+                                <div class="tbs">
+                                    <img src="../IMG/TCC.jpg" alt="">
+                                </div>
+
+                                <div class="tbs">
+                                    <img src="../IMG/sites.jpg" alt="">
+                                </div>
+
+                                <div class="tbs">
+                                    <img src="../IMG/certificacoes.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-side">
+                        <div class="content">
+                            <h4>Jogo da forca</h4>
+                            <h1>Palavras Aleatórias</h1>
+                            <p>Esse Jogo sorteia aletóriamente palavras para o usuário, e usa os mesmos metódos do jogo original.
+                            </p>
+                            <div class="linguagens-icons">
+                                <div class="linguagem">
+                                    <i class="fa-brands fa-html5"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-brands fa-css3-alt"></i>
+                                </div>
+                                <div class="linguagem">
+                                    <i class="fa-brands fa-js"></i>
+                                </div>
+                            </div>
+
+                            <div class="options-btn">
+                                <div class="ver-sobre">
+                                    <i class="fa-regular fa-eye"></i>
+                                    <a class="button" href="#" onclick="scrollToElement('ver-mais')">Ver mais</a>
+                                </div>
+
+                                <div class="ver-projeto">
+                                    <i class="fa-solid fa-code"></i>
+                                    <a class="button" href="#">Projeto</a>
+                                    <link rel="shortcut icon" type="image/x-icon"
+                                        href="../img/pages_documents_copy_paste_icon_147449.png">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="title-ver-mais" id="ver-mais">
+                    <h2>Sobre o funcionamento do projeto (em Breve)</h2>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="../JAVASCRIPT/script.js"></script>
 </body>
+
 </html>
