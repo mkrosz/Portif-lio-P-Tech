@@ -122,3 +122,18 @@ function openTab(evt, tabName) {
   document.getElementById(tabName).style.display = "block";
   evt.currentTarget.classList.add("active");
 }
+
+//Aumenta imagem de Certificado
+/*
+ // Obtém todas as divs com a classe "options"
+ const options = document.querySelectorAll('.options');
+
+ // Itera sobre cada div e adiciona um evento de clique
+ options.forEach(option => {
+     option.addEventListener('click', () => {
+         // Obtém a imagem dentro da div clicada
+         const image = option.querySelector('img');
+         // Adiciona uma classe para aumentar o tamanho da imagem
+         image.classList.toggle('enlarged');
+     });
+ });*/
