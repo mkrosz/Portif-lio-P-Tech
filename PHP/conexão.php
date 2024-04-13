@@ -1,9 +1,9 @@
 <?php
 
-$host = "localhost";
-$db = "pesquisar";
+$host = "roundhouse.proxy.rlwy.net";
+$db = "railway";
 $user = "root";
-$pass = "";
+$pass = "eJpqXquzyIcoIuXgmBCfwjUNNxWFJkOw";
 
 $mysqli = new mysqli($host, $user, $pass, $db);
 if($mysqli->connect_errno) {
