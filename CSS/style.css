@@ -316,3 +316,84 @@ h2 {
     margin-top: 85px; 
     margin-bottom: 85px;
 }
+
+/*Menu de Hamburguer*/
+
+.hamburger-menu {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    margin-top: 0;
+    margin-left: 2rem;
+}
+
+.line {
+    width: 100%;
+    height: 3px;
+    background-color: #8A2BE2;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #1e1c2a;
+    transition: left 0.3s ease;
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    z-index: 1000;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 2px 10px;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #F3F8FF;
+    text-decoration: none;
+    font-size: 16px;
+}
+.sidebar ul:hover {
+    background-color: #2d2b38;
+ }
+
+.hamburger-menu.open+.sidebar {
+    left: 0;
+}
+
+.sidebar .close-btn {
+    margin-bottom: 20px;
+    padding: 10px 96.5px;
+    background-color: #1e1c2a;
+    color: #F3F8FF;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.sidebar .close-btn:hover {
+    background-color: #2d2b38;
+}
+
+.espaço-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #8A2BE2;
+}

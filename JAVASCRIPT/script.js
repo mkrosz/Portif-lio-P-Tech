@@ -102,27 +102,6 @@ function showImage(index) {
   images[index].style.display = "block"; // Exibe a imagem atual
 }
 
-// Função para mudar de aba no P-Tech
-function openTab(evt, tabName) {
-  var i, tabcontent, tablinks;
-
-  // Esconde todos os elementos com a classe "tab"
-  tabcontent = document.getElementsByClassName("tab");
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-  }
-
-  // Remove a classe "active" de todos os botões de abas
-  tablinks = document.getElementsByClassName("tab-button-js");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].classList.remove("active");
-  }
-
-  // Mostra o conteúdo da aba atual e adiciona a classe "active" ao botão da aba atual
-  document.getElementById(tabName).style.display = "block";
-  evt.currentTarget.classList.add("active");
-}
-
 // Aumenta imagem de Certificado
 
 const options = document.querySelectorAll('.options');
